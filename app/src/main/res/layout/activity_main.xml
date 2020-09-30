@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/pizzaImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/pizza" />
+
+            <TextView
+                android:id="@+id/pizzaTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@id/pizzaImage"
+                android:text="Pepperoni Pizza"
+                android:textColor="#DE000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/pizzaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pizzaTitle"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toEndOf="@id/pizzaImage"
+                android:text="$6.00 - Comes with mozzarella filled crusts."
+                android:textColor="#99000000" />
+
+            <Button
+                android:id="@+id/numberOfPizza"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#6202EE"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/lemonadeImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/lemonade" />
+
+            <TextView
+                android:id="@+id/lemonadeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@id/lemonadeImage"
+                android:text="Mint Lemonade"
+                android:textColor="#DE000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/lemonadeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lemonadeTitle"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/lemonadeImage"
+                android:text="$3.00 - Made of fresh mint, lime and lemons."
+                android:textColor="#99000000" />
+
+            <Button
+                android:id="@+id/numberOfLemonade"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#6202EE"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/puddingImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/pudding" />
+
+            <TextView
+                android:id="@+id/puddingTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@id/puddingImage"
+                android:text="Summer Pudding "
+                android:textColor="#DE000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/puddingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/puddingTitle"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/puddingImage"
+                android:text="$5.00 - Fruity pudding with chocolate dressing."
+                android:textColor="#99000000" />
+
+            <Button
+                android:id="@+id/numberOfPudding"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#6202EE"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#6202EE"
+        android:text="Order Now"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
